@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "my-navbar my-navbar"
+        "my-sidebar main"
+        "my-sidebar my-footer"
+    ;
+}
+
+my-navbar {
+    top: 0;
+    position: sticky;
+    grid-area: my-navbar;
+    background: navy;
+    color: #fff;
+    padding: .25em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+my-sidebar {
+    min-height: calc(100vh - 32px);
+    top: 32px;
+    position: sticky;
+    align-self: start;
+    grid-area: my-sidebar;
+    background: #0e0338;
+    color: #fff;
+}
+
+main {
+    grid-area: main;
+}
+
+my-footer {
+    grid-area: my-footer;
+    background-color: black;
+    color: #fff;
+    padding: .25em;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    #toggle-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas: 
+            "my-navbar"
+            "my-sidebar"
+            "main"
+            "my-footer"
+        ;
+    }
+
+    my-sidebar {
+        display: none;
+    }
+
+    my-sidebar.active {
+        display: block;
+    }
+    
+}
