@@ -54,6 +54,7 @@ main {
 my-footer {
     grid-area: my-footer;
     background-color: black;
+align-items: right;
     color: #fff;
     padding: .25em;
 }
