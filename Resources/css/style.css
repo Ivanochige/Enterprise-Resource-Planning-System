@@ -82,6 +82,9 @@ my-footer {
 
     my-sidebar {
         display: none;
+min-height: calc(100vh - 32px);
+    top: 32px;
+    position: sticky;
     }
 
     my-sidebar.active {
