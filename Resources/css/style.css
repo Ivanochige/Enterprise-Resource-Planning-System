@@ -63,6 +63,10 @@ align-items: right;
 text-align: right;
 }
 
+.footer p {
+font-size: 15px;
+}
+
 #toggle-menu {
     display: none;
 }
