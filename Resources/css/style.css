@@ -25,14 +25,14 @@ my-navbar {
     grid-area: my-navbar;
     background: navy;
     color: #fff;
-    padding: .25em;
+    padding: .5em;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
 .navbar {
-    display: flex;
+    display: grid;
     align-items: center;
     gap: 10px;
 }
