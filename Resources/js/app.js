@@ -31,7 +31,7 @@ class MyFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <div class="footer">
-<p>&copy; 2026 Ocson Inc.</p>
+<p>&copy; 2026 Ocson Inc</p>
         </div>`;
     }
 }
