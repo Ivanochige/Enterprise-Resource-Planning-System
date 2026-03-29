@@ -3,12 +3,12 @@
 class Mynavbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <nav>
+        <div class="navbar">
             <span id="toggle-menu" onclick="toggleSidebar()" class="material-symbols-outlined">
                 menu
             </span>
             Ocson
-        </nav>`;
+        </div>`;
     }
 }
 customElements.define('my-navbar', Mynavbar);
@@ -17,9 +17,9 @@ customElements.define('my-navbar', Mynavbar);
 class MySidebar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <my-sidebar id="sidebar">
+        <div class="sidebar">
             Sidebar
-        </my-sidebar>
+        </div>
         `
         ;
     }
@@ -30,7 +30,9 @@ customElements.define('my-sidebar', MySidebar);
 class MyFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <footer>&copy; 2026 Ocson Inc.</footer>`;
+        <div class="footer">
+<p>&copy; 2026 Ocson Inc.</p>
+</footer>`;
     }
 }
 customElements.define('my-footer', MyFooter);
