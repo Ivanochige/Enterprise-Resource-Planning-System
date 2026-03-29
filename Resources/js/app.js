@@ -32,7 +32,7 @@ class MyFooter extends HTMLElement {
         this.innerHTML = `
         <div class="footer">
 <p>&copy; 2026 Ocson Inc.</p>
-</footer>`;
+        </div>`;
     }
 }
 customElements.define('my-footer', MyFooter);
