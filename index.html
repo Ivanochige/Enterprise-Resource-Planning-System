@@ -3,21 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Material Symbols Outlined font for icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <!-- Custom CSS for styling -->
-    <link rel="stylesheet" href="Resources/css/style.css">
-    <script src="Resources/js/app.js" defer></script>
-    <script src="Resources/js/funcs.js" defer></script>
     <title>Ocson</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Resources/css/main.css">
+    <link rel="stylesheet" href="Resources/css/style.css">
+
+    <!-- Custom JS -->
+    <script type="module" src="/Resources/js/app.js"></script>
 </head>
 <body>
-    <my-navbar></my-navbar>
+
+    <!-- Overlay for mobile -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Sidebar Navigation -->
     <my-sidebar></my-sidebar>
-    <main>
-        <h4>Hello World!</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+    <!-- Main Content Wrapper -->
+    <main class="main-content">
+        <my-navbar>
+            <div class="main-heading">
+                <span></span>
+            </div>
+        </my-navbar>
+
+        <!-- This is where pages load -->
+        <div class="main-body"></div>
     </main>
-    <my-footer></my-footer>
+
+    <script type="module" src="/Resources/js/funcs.js"></script>
+    <script type="module" src="/Resources/js/router.js"></script>
 </body>
 </html>
