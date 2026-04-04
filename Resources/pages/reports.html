@@ -1,0 +1,162 @@
+
+<div class="content-area">
+<!-- Page Header -->
+<div class="page-header">
+    <h1 class="page-title">Reports & Analytics</h1>
+    <div class="report-actions">
+        <button class="btn">
+            <span class="material-symbols-outlined">picture_as_pdf</span> Export PDF
+        </button>
+        <button class="btn btn-primary">
+            <span class="material-symbols-outlined">download</span> Export CSV
+        </button>
+    </div>
+</div>
+
+<!-- Filters -->
+<div class="filters-bar">
+    <select class="filter-select" id="report-period">
+        <option value="today">Today</option>
+        <option value="week">This Week</option>
+        <option value="month" selected>This Month</option>
+        <option value="quarter">This Quarter</option>
+        <option value="year">This Year</option>
+        <option value="custom">Custom Range</option>
+    </select>
+    <input type="date" class="filter-input" id="start-date">
+    <span style="color: var(--text-muted);">to</span>
+    <input type="date" class="filter-input" id="end-date">
+    <select class="filter-select" id="category-filter">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="apparel">Apparel</option>
+        <option value="home">Home & Office</option>
+    </select>
+    <button class="btn btn-primary">Apply Filters</button>
+</div>
+
+<!-- Stats Cards -->
+<div class="stats-grid">
+    <div class="stat-card">
+        <div class="stat-info">
+            <h3>Total Revenue</h3>
+            <p>Ugx 845,200</p>
+            <span class="trend trend-up">↑ 12.5% vs last period</span>
+        </div>
+        <div class="stat-icon">
+            <span class="material-symbols-outlined">trending_up</span>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-info">
+            <h3>Units Sold</h3>
+            <p>1,248</p>
+            <span class="trend trend-up">↑ 8.2%</span>
+        </div>
+        <div class="stat-icon">
+            <span class="material-symbols-outlined">inventory_2</span>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-info">
+            <h3>Avg. Order Value</h3>
+            <p>Ugx 67,850</p>
+            <span class="trend trend-down">↓ 3.1%</span>
+        </div>
+        <div class="stat-icon">
+            <span class="material-symbols-outlined">analytics</span>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-info">
+            <h3>Profit Margin</h3>
+            <p>24.8%</p>
+            <span class="trend trend-up">↑ 1.4%</span>
+        </div>
+        <div class="stat-icon">
+            <span class="material-symbols-outlined">percent</span>
+        </div>
+    </div>
+</div>
+
+<!-- Charts Grid -->
+<div class="charts-grid">
+    <div class="chart-card">
+        <div class="table-header">Revenue Over Time</div>
+        <div class="chart-placeholder">
+            [Integrate Chart.js, ApexCharts, or Recharts here]
+        </div>
+    </div>
+    <div class="chart-card">
+        <div class="table-header">Sales by Category</div>
+        <div class="chart-placeholder">
+            [Pie/Donut Chart Placeholder]
+        </div>
+    </div>
+</div>
+
+<!-- Detailed Report Table -->
+<div class="recent-table">
+    <div class="table-header">Detailed Transaction Report</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Transaction ID</th>
+                <th>Product / Service</th>
+                <th>Category</th>
+                <th>Date</th>
+                <th>Units</th>
+                <th>Revenue</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>#TXN-8842</td>
+                <td>Premium Subscription</td>
+                <td>Software</td>
+                <td>Apr 02, 2026</td>
+                <td>1</td>
+                <td>Ugx 45,000</td>
+                <td><span class="status-badge status-paid">Completed</span></td>
+            </tr>
+            <tr>
+                <td>#TXN-8841</td>
+                <td>Wireless Headphones</td>
+                <td>Electronics</td>
+                <td>Apr 02, 2026</td>
+                <td>12</td>
+                <td>Ugx 180,000</td>
+                <td><span class="status-badge status-paid">Completed</span></td>
+            </tr>
+            <tr>
+                <td>#TXN-8840</td>
+                <td>Consulting Package</td>
+                <td>Services</td>
+                <td>Apr 01, 2026</td>
+                <td>1</td>
+                <td>Ugx 320,000</td>
+                <td><span class="status-badge status-pending">Processing</span></td>
+            </tr>
+            <tr>
+                <td>#TXN-8839</td>
+                <td>Ergonomic Desk Chair</td>
+                <td>Office</td>
+                <td>Mar 31, 2026</td>
+                <td>4</td>
+                <td>Ugx 210,000</td>
+                <td><span class="status-badge status-overdue">Refunded</span></td>
+            </tr>
+            <tr>
+                <td>#TXN-8838</td>
+                <td>Cloud Storage (1TB)</td>
+                <td>Software</td>
+                <td>Mar 30, 2026</td>
+                <td>5</td>
+                <td>Ugx 95,000</td>
+                <td><span class="status-badge status-paid">Completed</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
