@@ -100,6 +100,7 @@ class MySidebar extends HTMLElement {
                             <span class="material-symbols-outlined dropdown-arrow">expand_more</span>
                         </button>
                         <div class="submenu">
+                            <a href="#pos" data-page="pos.html">Sales</a>
                             <a href="#orders" data-page="orders.html">Orders</a>
                             <a href="#invoices" data-page="invoices.html">Invoices</a>
                             <a href="#customers" data-page="customers.html">Customers</a>
