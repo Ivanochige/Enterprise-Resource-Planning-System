@@ -49,6 +49,7 @@ my-navbar {
 
 main {
     grid-area: main;
+    scrollbar-width: none;  /* Firefox */
 }
 
 my-footer {
