@@ -56,7 +56,7 @@ async function loadPage(page) {
         }
 
         // Update browser tab title
-        document.title = title;
+        document.title = `Ocson | ${title}`;
 
         // ==============================
 
