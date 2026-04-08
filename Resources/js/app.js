@@ -10,7 +10,7 @@ class MyNavbar extends HTMLElement {
                     </button>
 
                     <!-- DYNAMICPAGE TITLE -->
-                    <h2 id="page-title" style="margin-left: 1px;">Dashboard</h2>
+                    <h2 id="page-title" style="margin-left: 1px;"></h2>
 
                     <div class="search-bar">
                         <span class="material-symbols-outlined" style="color: #9ca3af;">search</span>
