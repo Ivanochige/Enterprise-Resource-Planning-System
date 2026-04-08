@@ -558,3 +558,5 @@ th {
         display: none;
     }
 }
+
+@media (max-width: 360px) {}
