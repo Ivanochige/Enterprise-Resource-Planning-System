@@ -16,12 +16,6 @@
   --radius-sm: 8px;
 }
 
-.content-area {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .pos-layout {
   display: grid;
   grid-template-columns: 1fr 400px;
