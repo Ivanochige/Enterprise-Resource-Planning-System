@@ -1,1 +1,149 @@
-<div class="content-area"></div>
+<div class="content-area">
+  <div class="pos-layout">
+    <!-- Product Catalog Section -->
+    <section class="pos-catalog">
+      <header class="catalog-header">
+        <div class="search-wrapper">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+          </svg>
+          <input type="text" class="search-input" placeholder="Search products or scan barcode...">
+        </div>
+        <nav class="category-tabs">
+          <button class="tab active" data-category="all">All Items</button>
+          <button class="tab" data-category="beverages">Beverages</button>
+          <button class="tab" data-category="food">Food</button>
+          <button class="tab" data-category="desserts">Desserts</button>
+          <button class="tab" data-category="extras">Extras</button>
+        </nav>
+      </header>
+
+      <main class="product-grid">
+        <article class="product-card" data-id="1" data-price="4.50">
+          <div class="product-image">☕</div>
+          <div class="product-info">
+            <h3 class="product-name">Espresso</h3>
+            <span class="product-price">$4.50</span>
+          </div>
+        </article>
+        <article class="product-card" data-id="2" data-price="5.75">
+          <div class="product-image">🥐</div>
+          <div class="product-info">
+            <h3 class="product-name">Croissant</h3>
+            <span class="product-price">$5.75</span>
+          </div>
+        </article>
+        <article class="product-card" data-id="3" data-price="6.00">
+          <div class="product-image">🥪</div>
+          <div class="product-info">
+            <h3 class="product-name">Club Sandwich</h3>
+            <span class="product-price">$6.00</span>
+          </div>
+        </article>
+        <article class="product-card" data-id="4" data-price="3.25">
+          <div class="product-image">🍵</div>
+          <div class="product-info">
+            <h3 class="product-name">Green Tea</h3>
+            <span class="product-price">$3.25</span>
+          </div>
+        </article>
+        <article class="product-card" data-id="5" data-price="8.50">
+          <div class="product-image">🍰</div>
+          <div class="product-info">
+            <h3 class="product-name">Cheesecake</h3>
+            <span class="product-price">$8.50</span>
+          </div>
+        </article>
+        <article class="product-card" data-id="6" data-price="4.00">
+          <div class="product-image">🍪</div>
+          <div class="product-info">
+            <h3 class="product-name">Chocolate Cookie</h3>
+            <span class="product-price">$4.00</span>
+          </div>
+        </article>
+        <article class="product-card" data-id="7" data-price="7.25">
+          <div class="product-image">🥤</div>
+          <div class="product-info">
+            <h3 class="product-name">Iced Latte</h3>
+            <span class="product-price">$7.25</span>
+          </div>
+        </article>
+        <article class="product-card" data-id="8" data-price="9.50">
+          <div class="product-image">🍔</div>
+          <div class="product-info">
+            <h3 class="product-name">Classic Burger</h3>
+            <span class="product-price">$9.50</span>
+          </div>
+        </article>
+      </main>
+    </section>
+
+    <!-- Cart & Checkout Section -->
+    <aside class="pos-cart">
+      <header class="cart-header">
+        <div>
+          <h2>Order #1042</h2>
+          <span class="cart-meta">2 items • Dine-in</span>
+        </div>
+        <div class="cart-controls">
+          <button class="btn-icon" title="Hold Order">⏸️</button>
+          <button class="btn-icon" title="Clear Cart">🗑️</button>
+        </div>
+      </header>
+
+      <div class="cart-items-container">
+        <div class="cart-item">
+          <div class="cart-item-info">
+            <h4>Espresso</h4>
+            <span class="item-price">$4.50</span>
+          </div>
+          <div class="qty-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">2</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+          <span class="item-total">$9.00</span>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item-info">
+            <h4>Croissant</h4>
+            <span class="item-price">$5.75</span>
+          </div>
+          <div class="qty-control">
+            <button class="qty-btn minus">−</button>
+            <span class="qty-value">1</span>
+            <button class="qty-btn plus">+</button>
+          </div>
+          <span class="item-total">$5.75</span>
+        </div>
+      </div>
+
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span>$14.75</span>
+        </div>
+        <div class="summary-row">
+          <span>Tax (8.25%)</span>
+          <span>$1.22</span>
+        </div>
+        <div class="summary-row discount">
+          <span>Discount</span>
+          <span>-$0.00</span>
+        </div>
+        <div class="summary-row total">
+          <span>Total</span>
+          <span class="total-amount">$15.97</span>
+        </div>
+
+        <div class="payment-options">
+          <button class="payment-btn cash">💵 Cash</button>
+          <button class="payment-btn card">💳 Card</button>
+          <button class="payment-btn mobile">📱 Mobile</button>
+        </div>
+
+        <button class="checkout-btn">Complete Sale</button>
+      </div>
+    </aside>
+  </div>
+</div>
