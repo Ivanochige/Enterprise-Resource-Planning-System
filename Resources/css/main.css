@@ -564,15 +564,15 @@ th {
          font-size: 20px;
     }
 
-     h1 {
+    .stat-info h1 {
          font-size: 20px:
     }
 
-     h3 {
+     .stat-info h3 {
          font-size: 15px:
     }
 
-     p  {
+     .stat-info p  {
          font-size: 12px;
     }
 }
